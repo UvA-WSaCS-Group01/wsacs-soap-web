@@ -23,4 +23,26 @@ public class CalculatorService {
     public String hello(@WebParam(name = "name") String txt) {
         return "Hello " + txt + " !";
     }
+    
+    
+    @WebMethod(operationName = "add")
+    public int add(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+        return x+y;
+    }
+    
+    @WebMethod(operationName = "min")
+    public int min(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+        return x-y;
+    }
+    
+    @WebMethod(operationName = "mul")
+    public int mul(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+        return x*y;
+    }
+    
+    @WebMethod(operationName = "div")
+    public int div(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+        return x/y;
+    }
+    
 }

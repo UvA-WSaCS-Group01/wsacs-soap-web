@@ -26,22 +26,22 @@ public class CalculatorService {
     
     
     @WebMethod(operationName = "add")
-    public int add(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+    public double add(@WebParam(name = "x") double x, @WebParam(name = "y") double y) {
         return x+y;
     }
     
-    @WebMethod(operationName = "min")
-    public int min(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+    @WebMethod(operationName = "sub")
+    public double sub(@WebParam(name = "x") double x, @WebParam(name = "y") double y) {
         return x-y;
     }
     
     @WebMethod(operationName = "mul")
-    public int mul(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+    public double mul(@WebParam(name = "x") double x, @WebParam(name = "y") double y) {
         return x*y;
     }
     
     @WebMethod(operationName = "div")
-    public int div(@WebParam(name = "x") int x, @WebParam(name = "y") int y) {
+    public double div(@WebParam(name = "x") double x, @WebParam(name = "y") double y) {
         return x/y;
     }
     
